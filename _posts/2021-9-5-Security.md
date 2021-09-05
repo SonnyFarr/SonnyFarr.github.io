@@ -1,0 +1,18 @@
+---
+layout: post
+title: Security proposal
+---
+
+After MiroLabs Inc.'s recent acquisitions, and expansions, I believe that a review of current security practices is warranted. As our dog grooming business doesn't require us to transmit large amounts of PII, we can get by with a less costly setup. As most locations don't need heavy processing power, I feel that a series of whitelisted laptops/Chromebooks, using a VPN and two-factor authentication to communicate with the main network would suffice for the business needs for computing, and a review of each regions laws and standards should allow us to see if there are any other factors to consider (this should be documented in our due diligence paperwork when we acquired the businesses).  
+
+Performance - This would require an appropriate system to handle the VPN traffic, but would allow us to minimize the risks of unauthorized devices connecting to the internal network.
+
+Latency - As all of our sites would need to remote in to the company network, it would require that each site have a miminally acceptable connection speed, as a poor connection could negatively impacy their efficiency. We would also need to plan for any outages and have backup procedures in place to accomodate. However, as all of the devices would need to be whitelisted manually, it could cause a delay with sending replacement devices. I would propose that 
+
+Usability - These devices would be fairly simple to operate, and the VPN and two-factor authentication would require a minimal amount of training to operate, and our helpdesk technicians should be able to handle the majority of the issues that arise. 
+
+Recoverability - As we would be having all sites remote into the network, we would have a single point of failure; if the connection to main network is not accessible for any reason, the sites wouldn't be able to perform. We would need to make sure that we have backups in place for authentication servers, as well as a robust backup system. We would need to make sure that our data center of choice is able to handle the traffic as well have the compensations for downtime written into the contract in case of unavoidable issues (such as natural disasters). 
+
+Availability - At the moment, part of why I favor this plan is how easily acquireable the hardware for the sites would be. We would need to get RFB for several vendors, but as the field for laptops/Chromebooks is very diverse, we should not have any issues with sourcing an adequate device for our needs. This also makes it simple to add devices to the system as we expand our business. With an inventory management system in place, we can have older devices rotated out of use as they approach obsolesence, and have newer devices sent out.
+
+This would require that we enhance security at the connection level, but I feel that maintaining a whitelist of devices, and not allowing un-approved devices to connect to the network should provide a simple but effective method to minimize risk of unauthorized users accessing our data. And since all traffic would need to go through a VPN connection with a two-factor authentication, we should be able to further mitigate risk, and being able to monitor for anomolous behavior on the network (such as oddly timed traffic) I feel that this allows us to have an affordable, flexible, easy to use, and easy to maintain system in place that can easily grow with the company.
